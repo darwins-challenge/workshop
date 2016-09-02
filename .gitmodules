@@ -1,0 +1,3 @@
+[submodule "moonlander-game"]
+	path = moonlander-game
+	url = https://github.com/darwins-challenge/moonlander-game.git
