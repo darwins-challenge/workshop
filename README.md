@@ -10,4 +10,8 @@ git submodule init
 git submodule update
 ```
 
+## Resource
+The entire repository is downloadable as a [resource][workshop].
+
 [submodules]: https://git-scm.com/book/en/v2/Git-Tools-Submodules
+[workshop]: https://s3.amazonaws.com/darwins-challenge/workshop.tar.gz
