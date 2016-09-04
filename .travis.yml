@@ -1,0 +1,3 @@
+language: c # do we need a language?
+install: make
+script: make
