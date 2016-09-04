@@ -2,8 +2,9 @@ language: c
 install: make
 script: make
 deploy:
-  'on':
+  on:
     branch: master
+  provider: s3
   bucket: darwins-challenge
   skip_cleanup: true
   local_dir: build
