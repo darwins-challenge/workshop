@@ -4,3 +4,6 @@
 [submodule "moonlander-ast-rust"]
 	path = moonlander-ast-rust
 	url = https://github.com/darwins-challenge/moonlander-ast-rust.git
+[submodule "moonlander-visualisation"]
+	path = moonlander-visualisation
+	url = https://github.com/darwins-challenge/moonlander-visualisation.git
