@@ -2,9 +2,10 @@
 
 build_dir = build
 archive = workshop.tar.gz
-files = moonlander-game moonlander-ast-rust moonlander-visualisation
+pdf = flymetothemoon.pdf
+files = moonlander-game moonlander-ast-rust moonlander-visualisation $(pdf)
 
-$(build_dir)/$(archive): $(build_dir) $(files) book
+$(build_dir)/$(archive): book $(build_dir) $(files)
 	tar cvfz $(build_dir)/$(archive) $(files)
 
 $(build_dir):
@@ -14,4 +15,4 @@ clean:
 	rm -rf $(build_dir)
 
 book:
-	curl -L -X GET "https://leanpub.com/s/$(BOOK_ID)?api_key=$(LEANPUB_API_KEY)" > $(build_dir)/flymetothemoon.pdf
+	curl -L -X GET "https://leanpub.com/s/$(BOOK_ID)?api_key=$(LEANPUB_API_KEY)" > $(pdf)
