@@ -7,3 +7,6 @@
 [submodule "moonlander-visualisation"]
 	path = moonlander-visualisation
 	url = https://github.com/darwins-challenge/moonlander-visualisation.git
+[submodule "nadezhda"]
+	path = nadezhda
+	url = https://github.com/darwins-challenge/nadezhda.git
