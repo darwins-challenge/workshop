@@ -10,3 +10,7 @@
 [submodule "nadezhda"]
 	path = nadezhda
 	url = https://github.com/darwins-challenge/nadezhda.git
+[submodule "presentation"]
+	path = presentation
+	url = https://github.com/darwins-challenge/rust-belt-rust.2016.git
+	branch = gh-pages
