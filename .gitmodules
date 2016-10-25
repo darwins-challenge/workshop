@@ -14,3 +14,9 @@
 	path = presentation
 	url = https://github.com/darwins-challenge/rust-belt-rust.2016.git
 	branch = gh-pages
+[submodule "moonlander-gp"]
+	path = moonlander-gp
+	url = https://github.com/darwins-challenge/moonlander-gp.git
+[submodule "moonlander-ast"]
+	path = moonlander-ast
+	url = https://github.com/darwins-challenge/moonlander-ast.git
