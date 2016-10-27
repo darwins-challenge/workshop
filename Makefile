@@ -5,11 +5,14 @@ archive = workshop.tar.gz
 pdf = flymetothemoon.pdf
 files = AGC bring-your-own moonlander-ast moonlander-game moonlander-gp moonlander-visualisation nadezhda presentation $(pdf)
 
-$(build_dir)/$(archive): book $(build_dir) $(files)
+$(build_dir)/$(archive): book $(build_dir) $(files) cargo_home
 	tar cvfz $(build_dir)/$(archive) $(files)
 
 $(build_dir):
 	mkdir -p $(build_dir)
+
+cargo_home:
+	mkdir -p cargo_home && ./fetch-deps
 
 clean:
 	rm -rf $(build_dir)

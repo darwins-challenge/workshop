@@ -5,6 +5,16 @@ The entire repository is downloadable as a [resource][workshop]. Note that the
 resource also has some extra files, downloaded when the resource is build. In
 particular what is missing in this repository is the [book][].
 
+## Note: if you're using this package without an internet connection
+
+We've prepared a directory containing all cargo dependencies, which
+will come in handy if you're using this workshop package in a situation
+where internet connections are spotty or non-existent.
+
+To use this setup, set `CARGO_HOME` before proceeding:
+
+    export CARGO_HOME=$(pwd)/cargo_home
+
 ## Now what?
 You want to learn about genetic programming and found these files. Now what?
 First of all, make sure to read the [book][]. It allows you to learn a little
@@ -38,7 +48,7 @@ Use the program `evolve_condition`, which will try to evolve a program of type
 
 You will work with `1a_fixed_vertical_landing.toml`. You will need to change the
 file `src/fitness.rs`. See the corresponding repository README, how to run these
-examples. 
+examples.
 
 #### Second scenario
 The previous scenario evolved a program that started at a fixed position.
@@ -49,7 +59,7 @@ Does your model still evolve a successful solution?
 
 You will work with `1a_random_vertical_landing.toml`. You will need to change the
 file `src/fitness.rs`. See the corresponding repository README, how to run these
-examples. 
+examples.
 
 ### With a Twist
 #### First scenario
@@ -69,17 +79,17 @@ example to evolve it, and don't forget to update the fitness function)
 
 You will work with `2a_fixed_rotated_landing.toml`. You will need to change the
 file `src/fitness.rs` and add a file to `src/grammar/`. See the corresponding
-repository README, how to run these examples. 
+repository README, how to run these examples.
 
 ### AGC
 We will try to fit the series of points with a function. You find a skeleton
 project in the `AGC` directory. See the AGC chapter in the accompanying book for
 a description of the book.
 
-### Bring your own 
+### Bring your own
 We would love to see this tool used to solve a problem that you have. There is a
 skeleton project that will give you a running start. Other than that you are on
-your own. 
+your own.
 
 [workshop]: https://s3.amazonaws.com/darwins-challenge/workshop.tar.gz
 [book]: https://leanpub.com/flymetothemoon
