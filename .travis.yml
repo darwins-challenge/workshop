@@ -1,4 +1,6 @@
-language: c
+language: rust
+rust:
+  - stable
 script: make
 deploy:
   'on':
