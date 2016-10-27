@@ -21,3 +21,9 @@
 	path = help/moonlander-ast
 	url = https://github.com/darwins-challenge/moonlander-ast.git
 	branch = master
+[submodule "AGC"]
+	path = AGC
+	url = https://github.com/darwins-challenge/starter-kit.git
+[submodule "bring-your-own"]
+	path = bring-your-own
+	url = https://github.com/darwins-challenge/starter-kit.git

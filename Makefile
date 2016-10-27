@@ -3,7 +3,7 @@
 build_dir = build
 archive = workshop.tar.gz
 pdf = flymetothemoon.pdf
-files = moonlander-ast moonlander-game moonlander-gp moonlander-visualisation nadezhda presentation $(pdf)
+files = AGC bring-your-own moonlander-ast moonlander-game moonlander-gp moonlander-visualisation nadezhda presentation $(pdf)
 
 $(build_dir)/$(archive): book $(build_dir) $(files)
 	tar cvfz $(build_dir)/$(archive) $(files)
