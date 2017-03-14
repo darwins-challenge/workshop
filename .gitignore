@@ -1,9 +1,7 @@
 /build
 flymetothemoon.pdf
 .DS_Store
-cargo_home
 README.html
-help/README.html
-help/FIRST_TIME_RUSTER.html
-help/STRAIGHT_HINTS.html
-help/TWISTED_HINTS.html
+help/*.html
+/cargo_home
+/docs
