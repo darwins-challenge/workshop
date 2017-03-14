@@ -63,6 +63,8 @@ We recommend you tackle these in order.
 - The projects are described below, but more detailed information is available
   in `moonlander-ast/README.md`.
 - If you get stuck or need hints, see the files in the `help` directory.
+- If you want to look up documentation on one of the Rust libraries used in this
+  project, see the `doc` directory.
 
 ### Straight Landing, fixed height
 

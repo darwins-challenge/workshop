@@ -1,6 +1,0 @@
-#!/bin/bash
-export CARGO_HOME=$(pwd)/cargo_home
-
-(cd moonlander-ast && cargo fetch)
-(cd moonlander-visualisation && cargo fetch)
-(cd nadezhda && cargo fetch)

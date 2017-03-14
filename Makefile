@@ -11,7 +11,7 @@ docs = README.html help/README.html help/FIRST_TIME_RUSTER.html help/STRAIGHT_HI
 	   moonlander-visualisation/README.html \
 	   nadezhda/README.html
 
-all: $(build_dir)/$(archive) docs library-docs
+all: $(build_dir)/$(archive) docs doc
 
 docs: $(docs)
 
@@ -20,19 +20,19 @@ $(build_dir)/$(archive): book $(build_dir) $(files)
 	tar cvfz $(build_dir)/$(archive) $(files)
 
 %.html: %.md $(CURDIR)/Makefile
-	pandoc -s -S --toc -H $(CURDIR)/github-pandoc.html.inc $< -o $@
+	pandoc -s -S --toc -H $(CURDIR)/build/github-pandoc.html.inc $< -o $@
 
 $(build_dir):
 	mkdir -p $(build_dir)
 
 cargo_home:
-	mkdir -p cargo_home && ./fetch-deps
+	mkdir -p cargo_home && build/fetch-deps
 
 clean:
 	rm -rf $(build_dir)
 
 book:
-	curl -L -X GET "https://leanpub.com/s/$(BOOK_ID)?api_key=$(LEANPUB_API_KEY)" > $(pdf)
+	curl -L -X GET "https://leanpub.com/s/$(BOOK_ID)?api_key=$(LEANPUB_API_KEY)" -o $(pdf)
 
-library-docs:
-	./create-docs
+doc:
+	build/create-docs
