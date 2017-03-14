@@ -1,8 +1,11 @@
-# workshop[![Build Status](https://travis-ci.org/darwins-challenge/workshop.svg?branch=master)](https://travis-ci.org/darwins-challenge/workshop)
-A repository gathering all the related files used during the Fly me to the Moon workshop.
+# Fly Me To The Moon Workshop
+
+[![Build Status](https://travis-ci.org/darwins-challenge/workshop.svg?branch=master)](https://travis-ci.org/darwins-challenge/workshop)
+
+A repository gathering all the related files used during the Fly Me To The Moon workshop.
 
 The entire repository is downloadable as a [resource][workshop]. Note that the
-resource also has some extra files, downloaded when the resource is build. In
+resource also has some extra files, downloaded when the resource is built. In
 particular what is missing in this repository is the [book][].
 
 ## Note: if you're using this package without an internet connection
@@ -43,7 +46,7 @@ You can do any number of things!
 - If you want to learn more about Genetic Programming from the very first
   beginnings, you can read the [book][].
 - If you'd prefer to dive right in, and do one of the guided projects, do one of
-  the Moon Lander Projects.
+  the Moon Lander Projects. They're described below.
 - If you're done early, there are more space-related projects to do. For
   example, the Apollo Guidance Computer.
 - If you get stuck, unwind! Play the `moonlander-game` directly, yourself,
@@ -108,13 +111,13 @@ You will work with `3_fixed_rotated_landing.toml`. You will need to change the
 file `src/fitness.rs` and add a file to `src/grammar/`. See the corresponding
 repository README, how to run these examples.
 
-### Apollo Guidance Computer
+## Apollo Guidance Computer
 
 We will try to fit the series of points with a function. You find a skeleton
 project in the `AGC` directory. See the AGC chapter in the accompanying book for
 a description of the book.
 
-### Alternatively: Bring your own
+## Alternatively: Bring your own
 
 We would love to see this tool used to solve a problem that you have. There is a
 skeleton project that will give you a running start. Other than that you are on
