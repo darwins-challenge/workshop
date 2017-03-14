@@ -1,0 +1,11 @@
+#! /usr/bin/env bash
+
+set -o errexit -o nounset
+
+cd moonlander-ast
+./gendoc
+cd ..
+
+cp -r moonlander-ast/target/doc docs
+echo '<meta http-equiv=refresh content=0;url=moonlander_gp/index.html>' > docs/index.html
+

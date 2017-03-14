@@ -4,7 +4,7 @@ build_dir = build
 archive = workshop.tar.gz
 pdf = flymetothemoon.pdf
 files = AGC bring-your-own moonlander-ast moonlander-game moonlander-gp moonlander-visualisation nadezhda presentation $(pdf) cargo_home README.md
-docs = README.html help/README.html help/FIRST_TIME_RUSTER.html help/STRAIGHT_HINTS.html help/TWISTED_HINTS.html \
+docs = library-docs README.html help/README.html help/FIRST_TIME_RUSTER.html help/STRAIGHT_HINTS.html help/TWISTED_HINTS.html \
 	   moonlander-game/README.html \
 	   moonlander-gp/README.html \
 	   moonlander-ast/README.html \
@@ -14,6 +14,7 @@ docs = README.html help/README.html help/FIRST_TIME_RUSTER.html help/STRAIGHT_HI
 all: $(build_dir)/$(archive) docs
 
 docs: $(docs)
+
 
 $(build_dir)/$(archive): book $(build_dir) $(files)
 	tar cvfz $(build_dir)/$(archive) $(files)
@@ -32,3 +33,6 @@ clean:
 
 book:
 	curl -L -X GET "https://leanpub.com/s/$(BOOK_ID)?api_key=$(LEANPUB_API_KEY)" > $(pdf)
+
+library-docs:
+	./create-docs
