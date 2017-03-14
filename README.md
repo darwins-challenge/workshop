@@ -38,28 +38,31 @@ We'll tell you all you need to know in the file called `help/FIRST_TIME_RUSTER.m
 
 ## Now what?
 
-You want to learn about genetic programming and found these files. Now what?
-First of all, make sure to read the [book][]. It allows you to learn a little
-bit of theory behind what we are going to do. It also has some pointers what to
-do next.
+You can do any number of things!
 
-Basically it consist of doing one of the following projects:
+- If you want to learn more about Genetic Programming from the very first
+  beginnings, you can read the [book][].
+- If you'd prefer to dive right in, and do one of the guided projects, do one of
+  the Moon Lander Projects.
+- If you're done early, there are more space-related projects to do. For
+  example, the Apollo Guidance Computer.
+- If you get stuck, unwind! Play the `moonlander-game` directly, yourself,
+  as a lowly human!
 
-### Projects
+## Moon Lander Projects
 
-For each of the following projects there is a corresponding repository. Make
-sure to also look into the READMEs of those repositories.
+The main attraction of this workshop is--of course--the moon lander project.
+You'll evolve a program that can safely land a capsule on the surface of the
+moon, without any explicit coding on your part!
 
-Below you find the *project* - *repository* correspondence.
+We recommend you tackle these in order.
 
-* **Straight Landing** `moonlander-ast`.
-* **With a Twist** `moonlander-ast`.
-* **AGC** `AGC`.
-* **Bring your own** `bring-your-own`.
+- The projects are described below, but more detailed information is available
+  in `moonlander-ast/README.md`.
+- If you get stuck or need hints, see the files in the `help` directory.
 
-### Straight Landing
+### Straight Landing, fixed height
 
-#### First scenario
 The lander starts at a fixed height, without any rotation, and needs to
 successfully land. To solve this scenario, it suffices to evaluate a `Condition`
 program.
@@ -70,24 +73,23 @@ command will be `Thrust`). If it doesn't, it won't (the command will be `Skip`).
 Use the program `evolve_condition`, which will try to evolve a program of type
 `Condition`.
 
-You will work with `1a_fixed_vertical_landing.toml`. You will need to change the
+You will work with `1_fixed_vertical_landing.toml`. You will need to change the
 file `src/fitness.rs`. See the corresponding repository README, how to run these
 examples.
 
-#### Second scenario
+### Straight landing, random height
 The previous scenario evolved a program that started at a fixed position.
 However, such a winning program might be overfitting to the problem. In this
 scenario, the lander starts at a random height.
 
 Does your model still evolve a successful solution?
 
-You will work with `1a_random_vertical_landing.toml`. You will need to change the
+You will work with `2_random_vertical_landing.toml`. You will need to change the
 file `src/fitness.rs`. See the corresponding repository README, how to run these
 examples.
 
 ### With a Twist
 
-#### First scenario
 In the preceding project, the lander always started upright. In this
 project, it will start at angle.
 
@@ -102,17 +104,17 @@ programs that we can express.
 Can you invent and implement such an AST node? (Don't forget to make a new
 example to evolve it, and don't forget to update the fitness function)
 
-You will work with `2a_fixed_rotated_landing.toml`. You will need to change the
+You will work with `3_fixed_rotated_landing.toml`. You will need to change the
 file `src/fitness.rs` and add a file to `src/grammar/`. See the corresponding
 repository README, how to run these examples.
 
-### AGC
+### Apollo Guidance Computer
 
 We will try to fit the series of points with a function. You find a skeleton
 project in the `AGC` directory. See the AGC chapter in the accompanying book for
 a description of the book.
 
-### Bring your own
+### Alternatively: Bring your own
 
 We would love to see this tool used to solve a problem that you have. There is a
 skeleton project that will give you a running start. Other than that you are on
