@@ -7,6 +7,7 @@ files = AGC bring-your-own moonlander-ast moonlander-game moonlander-gp moonland
 docs = README.html help/README.html help/FIRST_TIME_RUSTER.html help/STRAIGHT_HINTS.html help/TWISTED_HINTS.html \
 	   moonlander-game/README.html \
 	   moonlander-gp/README.html \
+	   moonlander-ast/README.html \
 	   moonlander-visualisation/README.html \
 	   nadezhda/README.html
 
