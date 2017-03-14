@@ -1,7 +1,10 @@
 language: rust
 rust:
   - stable
-script: make
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y pandoc
+script: make all
 deploy:
   'on':
     branch: master
