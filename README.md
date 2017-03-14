@@ -11,19 +11,42 @@ We've prepared a directory containing all cargo dependencies, which
 will come in handy if you're using this workshop package in a situation
 where internet connections are spotty or non-existent.
 
-To use this setup, set `CARGO_HOME` before proceeding:
+To use this setup, set `CARGO_HOME` before proceeding to the location
+of the `cargo_home` directory in this package.
 
-    export CARGO_HOME=$(pwd)/cargo_home
+On Linux/macOS:
+
+    export CARGO_HOME=/...where you've unpacked.../cargo_home
+
+On Windows:
+
+    set CARGO_HOME=C:\...where you've unpacked...\cargo_home
+
+Afterwards, `cd` to the appropriate directory and run `cargo` as usual:
+
+    cargo build ...
+    cargo run ...
+
+## Help, I haven't done Rust before!
+
+We've got you covered!
+
+Rust is a great language with a lot to offer. To do the exercises in this workshop,
+you'll only need a small fraction of Rust's features.
+
+We'll tell you all you need to know in the file called `help/FIRST_TIME_RUSTER.md`.
 
 ## Now what?
+
 You want to learn about genetic programming and found these files. Now what?
 First of all, make sure to read the [book][]. It allows you to learn a little
 bit of theory behind what we are going to do. It also has some pointers what to
 do next.
 
-Basically it consist of doing one of the following projects
+Basically it consist of doing one of the following projects:
 
 ### Projects
+
 For each of the following projects there is a corresponding repository. Make
 sure to also look into the READMEs of those repositories.
 
@@ -35,6 +58,7 @@ Below you find the *project* - *repository* correspondence.
 * **Bring your own** `bring-your-own`.
 
 ### Straight Landing
+
 #### First scenario
 The lander starts at a fixed height, without any rotation, and needs to
 successfully land. To solve this scenario, it suffices to evaluate a `Condition`
@@ -62,6 +86,7 @@ file `src/fitness.rs`. See the corresponding repository README, how to run these
 examples.
 
 ### With a Twist
+
 #### First scenario
 In the preceding project, the lander always started upright. In this
 project, it will start at angle.
@@ -82,11 +107,13 @@ file `src/fitness.rs` and add a file to `src/grammar/`. See the corresponding
 repository README, how to run these examples.
 
 ### AGC
+
 We will try to fit the series of points with a function. You find a skeleton
 project in the `AGC` directory. See the AGC chapter in the accompanying book for
 a description of the book.
 
 ### Bring your own
+
 We would love to see this tool used to solve a problem that you have. There is a
 skeleton project that will give you a running start. Other than that you are on
 your own.

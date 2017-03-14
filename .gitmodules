@@ -17,10 +17,6 @@
 [submodule "moonlander-ast"]
 	path = moonlander-ast
 	url = https://github.com/darwins-challenge/moonlander-ast.git
-[submodule "help/moonlander-ast"]
-	path = help/moonlander-ast
-	url = https://github.com/darwins-challenge/moonlander-ast.git
-	branch = master
 [submodule "AGC"]
 	path = AGC
 	url = https://github.com/darwins-challenge/starter-kit.git
