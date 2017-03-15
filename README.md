@@ -2,11 +2,14 @@
 
 [![Build Status](https://travis-ci.org/darwins-challenge/workshop.svg?branch=master)](https://travis-ci.org/darwins-challenge/workshop)
 
-A repository gathering all the related files used during the Fly Me To The Moon workshop.
+This repository bundles all subrepositories for the Fly Me To The Moon workshop.
 
-The entire repository is downloadable as a [resource][workshop]. Note that the
-resource also has some extra files, downloaded when the resource is built. In
-particular what is missing in this repository is the [book][].
+**If you're looking at this repository on GitHub:** you're missing some files.
+Download the whole bundle as a [resource][workshop]. In particular, you're
+missing the [book][].
+
+**If you got these files from a USB stick during the workshop**: congratulations,
+you're all set!
 
 ## Note: if you're using this package without an internet connection
 
@@ -49,8 +52,8 @@ You can do any number of things!
   the Moon Lander Projects. They're described below.
 - If you're done early, there are more space-related projects to do. For
   example, the Apollo Guidance Computer.
-- If you get stuck, unwind! Play the `moonlander-game` directly, yourself,
-  as a lowly human!
+- If you get stuck, unwind! Play the `moonlander-game` directly, yourself (even
+  if you're just a human).
 
 ## Moon Lander Projects
 
@@ -58,60 +61,12 @@ The main attraction of this workshop is--of course--the moon lander project.
 You'll evolve a program that can safely land a capsule on the surface of the
 moon, without any explicit coding on your part!
 
-We recommend you tackle these in order.
+We recommend you tackle these projects in order.
 
-- The projects are described below, but more detailed information is available
-  in `moonlander-ast/README.md`.
+- The projects are described in `moonlander-ast/README.md`.
 - If you get stuck or need hints, see the files in the `help` directory.
 - If you want to look up documentation on one of the Rust libraries used in this
   project, see the `doc` directory.
-
-### Straight Landing, fixed height
-
-The lander starts at a fixed height, without any rotation, and needs to
-successfully land. To solve this scenario, it suffices to evaluate a `Condition`
-program.
-
-If the `Condition` evaluates to `true`, the lander will use its thrusters (the
-command will be `Thrust`). If it doesn't, it won't (the command will be `Skip`).
-
-Use the program `evolve_condition`, which will try to evolve a program of type
-`Condition`.
-
-You will work with `1_fixed_vertical_landing.toml`. You will need to change the
-file `src/fitness.rs`. See the corresponding repository README, how to run these
-examples.
-
-### Straight landing, random height
-The previous scenario evolved a program that started at a fixed position.
-However, such a winning program might be overfitting to the problem. In this
-scenario, the lander starts at a random height.
-
-Does your model still evolve a successful solution?
-
-You will work with `2_random_vertical_landing.toml`. You will need to change the
-file `src/fitness.rs`. See the corresponding repository README, how to run these
-examples.
-
-### With a Twist
-
-In the preceding project, the lander always started upright. In this
-project, it will start at angle.
-
-Using the `Condition`, we could evaluate one of two commands: `Thrust` or
-`Skip`. Once the lander also needs to correct its attitude, those two
-commands are no longer sufficient (check: can `evolve_condition` evolve
-a winning solution to this scenario?)
-
-Instead, we'll need a new type of AST node, to increase the range of
-programs that we can express.
-
-Can you invent and implement such an AST node? (Don't forget to make a new
-example to evolve it, and don't forget to update the fitness function)
-
-You will work with `3_fixed_rotated_landing.toml`. You will need to change the
-file `src/fitness.rs` and add a file to `src/grammar/`. See the corresponding
-repository README, how to run these examples.
 
 ## Apollo Guidance Computer
 
