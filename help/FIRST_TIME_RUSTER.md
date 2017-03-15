@@ -314,6 +314,9 @@ Finally, we implement the `EvaluateToCommand` trait, which is called by the
 simulation engine, to turn the program into an action the moon lander is going
 to take. This is where the meat of your program is going to go.
 
+Add this code in a new file in the `src/grammar` directory, and don't forget
+to add the file in `src/grammar/mod.rs` (just copy/paste the existing examples).
+
 **Making a new example executable**
 
 The final thing you'll have to do is copy `examples/evolve_condition.rs` to a
