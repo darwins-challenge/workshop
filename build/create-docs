@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+set -euo pipefail
+
+(cd moonlander-ast && ./gendoc)
+
+mv moonlander-ast/target/doc .
+echo '<meta http-equiv=refresh content=0;url=moonlander_gp/index.html>' > doc/index.html
